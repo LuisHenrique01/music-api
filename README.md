@@ -36,5 +36,5 @@ A entidade User é a nativa do Django e conta com 3 endpoints disponibilizados:
 3. adminuser-create -> Aqui você pode criar um super usuário, mas para acessar você precisa está logado como um super usuário.
 
 # Disponibilização
-A API já pode ser encontrada no [endereço](https://musicbr-api.herokuapp.com/), na página inicial você vai encontrar uma documentação swagger, mas você pode escontrar a documentação no [link](https://musicbr-api.herokuapp.com/redoc/).
+A API já pode ser encontrada no [endereço](https://musicbr-api.herokuapp.com/), na página inicial você vai encontrar uma documentação swagger, mas você pode encontrar uma documentação alternativa no [link](https://musicbr-api.herokuapp.com/redoc/).
 
