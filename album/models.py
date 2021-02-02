@@ -9,7 +9,7 @@ class Album(models.Model):
 
     banda = models.ForeignKey(Banda, on_delete=models.CASCADE)
     nome = models.CharField('Nome', max_length=250)
-    data = models.DateField('Data')
+    data = models.DateField('Data', blank=True, null=True)
     musicas = models.ManyToManyField(Musica, related_name='musicas')
     
     class Meta:
