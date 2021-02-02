@@ -38,3 +38,6 @@ A entidade User é a nativa do Django e conta com 3 endpoints disponibilizados:
 # Disponibilização
 A API já pode ser encontrada no [endereço](https://musicbr-api.herokuapp.com/), na página inicial você vai encontrar uma documentação swagger, mas você pode encontrar uma documentação alternativa no [link](https://musicbr-api.herokuapp.com/redoc/).
 
+# Video
+https://youtu.be/1fGMFUrUDKA
+
