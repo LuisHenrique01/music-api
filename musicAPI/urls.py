@@ -30,11 +30,11 @@ from drf_yasg import openapi
 schema_view = get_schema_view(
    openapi.Info(
       title="Music API",
-      default_version='v1',
-      description="Project API",
-      terms_of_service="https://www.google.com/policies/terms/",
+      default_version='v2',
+      description="Projeto escolar API",
+      terms_of_service="http://escolhaumalicenca.com.br/licencas/mit/#",
       contact=openapi.Contact(email="luisrocha1201@gmail.com"),
-      license=openapi.License(name="Test License"),
+      license=openapi.License(name="MIT License"),
    ),
    public=True,
    permission_classes=(permissions.AllowAny,),
@@ -48,7 +48,7 @@ urlpatterns = [
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('user-create/', UserCreateAPIView.as_view(), name='user-create'),
-    path('user-detail/<int:pk>/', UserRetrieveUpdateDestroyAPIView.as_view(), name='user-create'),
+    path('user-detail/<int:pk>/', UserRetrieveUpdateDestroyAPIView.as_view(), name='user-detail'),
     path('adminuser-create', AdminUserCreateAPIView.as_view(), name='adminuser-create'),
     
     path('musica-list-create/', MusicaListCreateAPIView.as_view(), name='musica-list-create'),

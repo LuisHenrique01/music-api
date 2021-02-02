@@ -11,7 +11,7 @@ class UserCreateAPIView(g.CreateAPIView):
     permission_classes = [AllowAny]
     
     
-class UserRetrieveUpdateDestroyAPIView(g.RetrieveDestroyAPIView):
+class UserRetrieveUpdateDestroyAPIView(g.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [UsuarioPermission]
